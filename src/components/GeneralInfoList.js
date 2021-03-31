@@ -9,6 +9,8 @@ const GeneralInfoList = () => {
             <p>{contactInfo.lastName}</p>
             <p>{contactInfo.phone}</p>
             <p>{contactInfo.email}</p>
+            <a href={contactInfo.LinkedIn}>LinkedIn</a>
+            <hr />
         </div>
      );
 }

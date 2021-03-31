@@ -12,13 +12,17 @@ function App() {
     return (
       <div className="app">
         <CVInfoContextProvider>
-          <Header />
-          <GeneralInfoForm />
-          <ExperienceForm />
-          <EducationForm />
-          <GeneralInfoList />
-          <ExperienceList />
-          <EducationList />
+          <div id="form-container">
+            <Header />
+            <GeneralInfoForm />
+            <ExperienceForm />
+            <EducationForm />
+          </div>
+          <div id="A4-CV">
+            <GeneralInfoList />
+            <ExperienceList />
+            <EducationList />
+          </div>
         </CVInfoContextProvider>
       </div>
     );

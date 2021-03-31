@@ -8,9 +8,10 @@ function GeneralInfoForm() {
     const [lastName, setLastName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
+    const [linkedIn, setLinkedIn] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
-        addContact(firstName, lastName, phone, email);
+        addContact(firstName, lastName, phone, email, linkedIn);
     }
     return(
         <div>
@@ -41,6 +42,13 @@ function GeneralInfoForm() {
                     value={email}
                     placeholder="Email address"
                     onChange={(e) => setEmail(e.target.value)}
+                />
+                <br />
+                <input
+                    type="text"
+                    value={linkedIn}
+                    placeholder="LinkedIn URL"
+                    onChange={(e) => setLinkedIn(e.target.value)}
                 />
                 <br />
                 <button>Save</button>

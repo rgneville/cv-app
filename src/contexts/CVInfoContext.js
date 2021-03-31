@@ -11,7 +11,7 @@ const CVInfoContextProvider = (props) => {
         company: "SSR", 
         city: "Bristol", 
         jobStart: "23/09/2013", 
-        jobEnd: "n/a",
+        jobEnd: "01/04/2021",
         id: 1 }
     ])
 
@@ -23,8 +23,8 @@ const CVInfoContextProvider = (props) => {
         id: 1 }
     ])
 
-    const addContact = ( firstName, lastName, phone, email ) => {
-        setContactInfo({ firstName, lastName, phone, email, id: uuid()})
+    const addContact = ( firstName, lastName, phone, email, linkedIn ) => {
+        setContactInfo({ firstName, lastName, phone, email, linkedIn, id: uuid()})
     }
 
     const addJob =  ( position, company, city, jobStart, jobEnd ) => {
@@ -35,8 +35,16 @@ const CVInfoContextProvider = (props) => {
         setQualifications([...qualifications, {qualification, institution, location, finished, id: uuid()}])
     }
 
+    const removeJob = (id) => {
+        setExperience(experience.filter(job => job.id !== id))
+    }
+
+    const removeQualification = (id) => {
+        setQualifications(qualifications.filter(certificate => certificate.id !== id))
+    }
+
     return ( 
-        <CVInfoContext.Provider value={{ contactInfo, experience, qualifications, addContact, addJob, addQualification }}>
+        <CVInfoContext.Provider value={{ contactInfo, experience, qualifications, addContact, addJob, removeJob, addQualification, removeQualification }}>
             {props.children}
         </CVInfoContext.Provider>
      );
