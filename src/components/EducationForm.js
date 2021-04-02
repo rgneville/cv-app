@@ -19,6 +19,8 @@ function EducationForm() {
     return(
         <div>
             <form id="education-form" onSubmit={handleSubmit}>
+                <label>Add a qualification:</label>
+                <br />
                 <input
                     type="text"
                     value={qualification}
@@ -47,7 +49,7 @@ function EducationForm() {
                     onChange={(e) => setFinished(e.target.value)}
                 />
                 <br />
-                <button>Save</button>
+                <button>Add</button>
             </form>
         </div>
     )

@@ -7,6 +7,8 @@ import EducationForm from "./components/EducationForm"
 import ExperienceList from "./components/ExperienceList"
 import EducationList from "./components/EducationList"
 import GeneralInfoList from "./components/GeneralInfoList"
+import SkillForm from "./components/SkillForm"
+import SkillList from "./components/SkillList"
 
 function App() {
     return (
@@ -17,11 +19,13 @@ function App() {
             <GeneralInfoForm />
             <ExperienceForm />
             <EducationForm />
+            <SkillForm />
           </div>
-          <div id="A4-CV">
+          <div id="CV">
             <GeneralInfoList />
             <ExperienceList />
             <EducationList />
+            <SkillList />
           </div>
         </CVInfoContextProvider>
       </div>

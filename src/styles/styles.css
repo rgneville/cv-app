@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin-bottom: 15px;
+  background-color: #456E79;
+  color: white;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header svg {
+  fill: white;
+  padding: 5px 5px 5px 10px;
+}
+
+header svg:hover {
+  fill: #456E79;
+}
+
+form {
+  margin: 10px;
+}
+
+input[type=text] {
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e6ece7;
+  width: 300px;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 0.12em;
+}
+
+button {
+  margin: 5px 5px 3px 3px;
+  padding: 0.35em 1.2em;
+  display: inline-block;
+  border: 0.1em solid #456E79;
+  border-radius: 0.12em;
+  text-decoration: none;
+  color: #456E79;
+  font-size: small;
+  text-align: center;
+}
+
+button:hover {
+  background: #456E79;
+  color: white;
+}
+
+#CV {
+  border-style: solid;
+  border-width: 0px;
+  background: white;
+  width: 800px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#CV p {
+  font-size: small;
+}
+
+#CV li {
+  font-size: small;
+}
+
+#CV .experience-info {
+  margin: 6px;
+}
+
+#CV .education-info {
+  margin: 6px;
+}
+
+#CV .skill-info {
+  margin: 6px;
+}
+
+#CV #skills-title {
+  margin-bottom: 8px;
+}
+
+#general-info-list {
+  text-align: right;
+  background: #e6ece7;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#general-info-list p {
+  font-size: small;
+}
+
+#general-info-list #namebox {
+  text-align: left;
+}
+
+#general-info-list #contact {
+  text-align: right;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+/*# sourceMappingURL=styles.css.map */

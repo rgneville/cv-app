@@ -22,6 +22,8 @@ import { CVInfoContext } from "../contexts/CVInfoContext";
     return(
         <div>
             <form id="experience-form" onSubmit={handleSubmit}>
+            <label>Add a job:</label>
+            <br />
                 <input
                     type="text"
                     value={position}
@@ -57,7 +59,7 @@ import { CVInfoContext } from "../contexts/CVInfoContext";
                     onChange={(e) => setJobEnd(e.target.value)}
                 />
                 <br />
-                <button>Save</button>
+                <button>Add</button>
             </form>
         </div>
     )
