@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react"
 import { CVInfoContext } from "../contexts/CVInfoContext";
 
  function ExperienceForm() {
-     console.log(CVInfoContext);
     const { addJob } = useContext(CVInfoContext);
     //const { position, company, city, jobStart, jobEnd } = useState
     const [position, setPosition] = useState('');

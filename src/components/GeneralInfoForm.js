@@ -23,6 +23,7 @@ function GeneralInfoForm() {
                     value={firstName}
                     placeholder="First name"
                     onChange={(e) => setFirstName(e.target.value)}
+                    required
                 />
                 <br />
                 <input
@@ -30,6 +31,7 @@ function GeneralInfoForm() {
                     value={lastName}
                     placeholder="Last name"
                     onChange={(e) => setLastName(e.target.value)}
+                    required
                 />
                 <br />
                 <input
@@ -37,6 +39,7 @@ function GeneralInfoForm() {
                     value={phone}
                     placeholder="Phone number"
                     onChange={(e) => setPhone(e.target.value)}
+                    required
                 />
                 <br />
                 <input
@@ -44,6 +47,7 @@ function GeneralInfoForm() {
                     value={email}
                     placeholder="Email address"
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                 />
                 <br />
                 <input
@@ -51,6 +55,7 @@ function GeneralInfoForm() {
                     value={jobTitle}
                     placeholder="Job title"
                     onChange={(e) => setJobTitle(e.target.value)}
+                    required
                 />
                 <br />
                 <button>Save</button>

@@ -21,6 +21,7 @@ const EducationInfo = ({ certificate }) => {
     const handleSaveEdit = (e) => {
         e.preventDefault();
         editQualification(qualification, institution, location, finished, certificate.id);
+        setFormVisible(!formVisible);
     }
     return (
         <div className="education-container">

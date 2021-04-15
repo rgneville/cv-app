@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { CVInfoContext } from '../contexts/CVInfoContext';
 
 const SkillList = () => {
-    console.log(CVInfoContext);
     const { skills, clearSkills } = useContext(CVInfoContext);
     const handleDelete = (e) => {
         e.preventDefault();
