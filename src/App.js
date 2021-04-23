@@ -9,6 +9,7 @@ import EducationList from "./components/EducationList"
 import GeneralInfoList from "./components/GeneralInfoList"
 import SkillForm from "./components/SkillForm"
 import SkillList from "./components/SkillList"
+import PrintButton from "./components/PrintButton"
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
             <EducationList />
             <SkillList />
           </div>
+          <PrintButton />
         </CVInfoContextProvider>
       </div>
     );

@@ -45,6 +45,12 @@ input[type=text] {
   border-radius: 0.12em;
 }
 
+@media (max-width: 450px) {
+  input[type=text] {
+    width: 90%;
+  }
+}
+
 button {
   margin: 5px 5px 3px 3px;
   padding: 0.35em 1.2em;
@@ -60,6 +66,7 @@ button {
 button:hover {
   background: #456E79;
   color: white;
+  cursor: pointer;
 }
 
 #CV {
@@ -73,6 +80,24 @@ button:hover {
   margin-bottom: 30px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media (max-width: 1050px) {
+  #CV {
+    width: 70%;
+  }
+}
+
+@media (max-width: 750px) {
+  #CV {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  #CV {
+    width: 90%;
+  }
 }
 
 #CV p {
@@ -129,5 +154,9 @@ button:hover {
 li {
   text-decoration: none;
   list-style-type: none;
+}
+
+.bottomSpace {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@ $primary-color: #395754;
 $secondary-color: #456E79;
 $tertiary-color: #9CB9A8;
 $alt-color: #e6ece7;
+$mobile-width: 450px;
 
 * {
     padding: 0;
@@ -40,7 +41,11 @@ input {
         padding: 6px;
         margin: 5px;
         border-radius: 0.12em;
+        @media (max-width: $mobile-width) {
+            width: 90%;
+        }
     }
+    
 }
 
 button {
@@ -56,6 +61,7 @@ button {
     &:hover {
         background: $secondary-color;
         color: white;
+        cursor: pointer;
     }
 }
 
@@ -69,6 +75,15 @@ button {
     margin-top: 30px;
     margin-bottom: 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @media (max-width: 1050px) {
+        width: 70%;
+    }
+    @media (max-width: 750px) {
+        width: 80%;
+    }
+    @media (max-width: $mobile-width) {
+        width: 90%;
+    }
     p {
         font-size: small;
     }
@@ -112,4 +127,8 @@ button {
 li {
     text-decoration: none;
     list-style-type: none;
+}
+
+.bottomSpace {
+    margin-bottom: 10px;
 }

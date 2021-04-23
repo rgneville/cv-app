@@ -15,7 +15,7 @@ const SkillList = () => {
                 return (<li key={ability.id} id="skill-info">{ability.skill}</li>)
                 })}
             </ul>
-            <button onClick={handleDelete}>Clear skills</button>
+            <button onClick={handleDelete} className="bottomSpace">Clear skills</button>
         </div>
      );
 }
