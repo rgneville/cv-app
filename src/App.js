@@ -18,8 +18,11 @@ function App() {
           <div id="form-container">
             <Header />
             <GeneralInfoForm />
+            <hr />
             <ExperienceForm />
+            <hr />
             <EducationForm />
+            <hr />
             <SkillForm />
           </div>
           <div id="CV">

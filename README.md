@@ -1,23 +1,53 @@
-# Getting Started with Create React App
+# React/Context API 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application which generates and prints a CV using user entered data. Features controlled forms, Hooks and is served by a Context API global state management solution. Prints out a copy of the user's entered information (though with minimal styling). There's lots of solutions out there with endless customisation, the idea is to create a clean CV quickly and with little fuss.
 
-## Available Scripts
+## Lessons Learned
 
-In the project directory, you can run:
+My first real React project (after putting the mandatory to do list together) - started off using scattered pieces of state in class based components, eventually decided to go away and learn Context API and Hooks to provide a more global place to store the app's info. Didn't have to get far into making an app before I started really appreciating how much cleaner state management solutions are.
 
-### `yarn start`
+First experience of using Hooks, can definitely see why people are doing away with class based components - removes the hassle of binding to this and being able to pass the setState method as props makes updating global state a lot easier.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Learned how to print a specified div from a JavaScript application - found a solution in the end, but not really happy with the outcome because it kills most of the styling. Will revisit this when I've learned more about node.js, it looks like [Pupetteer](https://github.com/puppeteer/puppeteer) would allow me to do this nicely.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Actually got a really good grasp of array methods from using this project (like map, filter, reduce) - one of the main reasons I like working with React is because it does make you a better JavaScript developer overall.
 
-### `yarn test`
+## Potential Future Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Running a server with Puppetteer to generate and print off a styled copy of the CV
+
+- Add a colour picker so that the user can, to some extent, customise the styling of the final CV - don't want to go too crazy with customization as the idea is to create something presentable to employers quickly
+
+## Deployment
+
+Deployed with [github pages](https://pages.github.com/).
+
+## Get started
+
+From your command line, first clone this repo:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/rgneville/cv-app
+
+# Go into the repository
+$ cd cv-app
+
+# Remove current origin repository
+$ git remote remove origin
+```
+Then you can install the dependencies using NPM:
+
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm start
+```
+You should now have a development server running in your default browser.
 
 ### `yarn build`
 
@@ -29,42 +59,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

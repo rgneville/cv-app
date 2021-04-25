@@ -10,18 +10,18 @@ const CVInfoContextProvider = (props) => {
     const [ contactInfo, setContactInfo ] = useState([]);
 
     const [ experience, setExperience ] = useState([
-        { position: "Development Underwriter", 
-        company: "Sutton Specialist Risks Ltd", 
-        city: "Bristol, UK", 
+        { position: "Developer", 
+        company: "We Develop Ltd", 
+        city: "Atlantis", 
         jobStart: "23/09/2013", 
-        jobEnd: "01/04/2021",
+        jobEnd: "01/05/2021",
         id: 1 }
     ])
 
     const [ qualifications, setQualifications ] = useState([
-        { qualification: "BA (Hons) - Economics", 
-        institution: "University of Sussex", 
-        location: "Brighton, UK", 
+        { qualification: "BA (Hons) - Surf Science", 
+        institution: "University of Atlantis", 
+        location: "Atlantis", 
         finished: "17/07/2013",
         id: 1 }
     ])
